@@ -1,0 +1,24 @@
+:root {
+  --bg-papel: #f4f2eb;        /* Fondo analógico */
+  --naranja-jazz: #f05a24;    /* Bloques principales y acentos */
+  --amarillo-cálido: #f7941d; /* Secundario / Detalles */
+  --azul-acento: #1a75ff;      /* Botones / Hovers / Interacción */
+  --texto-tinta: #181818;     /* Trazo de texto y lineart */
+}
+
+body {
+  background-color: var(--bg-papel);
+  color: var(--texto-tinta);
+  font-family: sans-serif;
+}
+
+/* Ejemplo de botón/taza con tu azul al pasar el mouse */
+.taza-cafe {
+  background-color: var(--naranja-jazz);
+  color: white;
+  transition: background-color 0.2s ease;
+}
+
+.taza-cafe:hover {
+  background-color: var(--azul-acento); /* ¡El choque cromático del jazz! */
+}
