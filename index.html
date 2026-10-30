@@ -2,10 +2,57 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Mi Portafolio</title>
+    <title>Portafolio de Diseño</title>
+    <style>
+        /* Aquí empieza el CSS */
+        :root {
+            --bg-papel: #f4f2eb;        /* El fondo color papel antiguo */
+            --naranja-jazz: #f05a24;    /* Tu naranja característico */
+            --azul-acento: #1a75ff;     /* El azul eléctrico para cuando toques las cosas */
+            --texto-tinta: #181818;     /* El color de la tinta para leer bien */
+        }
+
+        body {
+            background-color: var(--bg-papel);
+            color: var(--texto-tinta);
+            font-family: sans-serif;
+            text-align: center;
+            padding-top: 50px;
+        }
+
+        h1 {
+            color: var(--naranja-jazz);
+            font-size: 2.5rem;
+        }
+
+        /* Estilo para simular una "taza de café" interactiva */
+        .taza-cafe {
+            display: inline-block;
+            background-color: var(--naranja-jazz);
+            color: white;
+            padding: 15px 30px;
+            margin: 10px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background-color 0.2s ease;
+        }
+
+        /* Lo que pasa cuando pasas el mouse por encima (efecto jazz) */
+        .taza-cafe:hover {
+            background-color: var(--azul-acento);
+        }
+    </style>
 </head>
 <body>
-    <h1>Hellouda World </h1>
-    <p>[inserte portafolio aqui]</p>
+
+    <h1>¡Cafetería Creativa / Portafolio!</h1>
+    <p>Hola, aquí te atiende el conejo barista. Elige tu café:</p>
+
+    <!-- Simulación de tus botones con forma de tazas de café -->
+    <a href="#" class="taza-cafe">☕ Espresso (Proyectos)</a>
+    <a href="#" class="taza-cafe">🍬 Caramelo (Redes)</a>
+    <a href="#" class="taza-cafe">🍵 Descafeinado (Sobre mí)</a>
+
 </body>
 </html>
